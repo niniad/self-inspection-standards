@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"C:\\\\Users\\\\dainin-kou\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\f6e449ec-8695-4ae7-aa27-a3d3a0109921\\\\0cbb9ebd-512a-421e-9cf1-5162f196d9c1\\\\skills\\\\xlsx\\\\scripts\\\\extract-text\" \"data\\\\Guest_AW協業_クエリ\\\\Guest_AW協業_ファイル一覧・進捗ステータス.xlsx\")",
+      "Bash(python -c ' *)",
+      "Bash(Get-Content \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\\\\tmp_action_required.txt\")",
+      "Bash(Measure-Object -Line)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\\\\tmp_action_required.txt\" | Measure-Object -Line\\).Lines - 1)",
+      "Bash(cd /tmp)",
+      "Bash(python3 -c \"import sys; print\\(sys.stdout.encoding\\)\")",
+      "Bash(python3)",
+      "Bash(python -c \"from openpyxl import load_workbook; wb = load_workbook\\('自主点検_レビュー指針.xlsx'\\); print\\('\\\\n'.join\\(wb.sheetnames\\)\\)\")",
+      "Bash(python consolidate.py)",
+      "Bash(python extract_data.py)",
+      "PowerShell(& 'C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\����_�����{�\\\\data\\\\build_consolidated.ps1')",
+      "PowerShell($file = \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\\\\点検項目別概要説明書\\\\自主点検概要説明書.md\"; $lines = Get-Content $file -Encoding UTF8; $newLines = New-Object System.Collections.ArrayList; $skip = $false; foreach \\($line in $lines\\) { if \\($line -match \"^### チェックリスト対応論点\"\\) { $skip = $true; continue }; if \\($skip\\) { if \\($line -match \"^---\" -or $line -match \"^## \" -or $line -match \"^# \" -or $line -match \"^### \"\\) { $skip = $false; [void]$newLines.Add\\($line\\); continue } else { continue } } else { [void]$newLines.Add\\($line\\) } }; $result = $newLines -join \"`n\"; Set-Content -Path $file -Value $result -Encoding UTF8 -NoNewline; Write-Host \"Done. Total lines: $\\($newLines.Count\\)\")",
+      "Bash(python -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 python _build_xlsx.py)",
+      "Bash(cd \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\" && rm -f _tmp_*.txt && echo \"cleaned tmp files\" && ls -la \"data/自主点検_提出成果物一覧.xlsx\")"
+    ]
+  }
+}
