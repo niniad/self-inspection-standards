@@ -29,7 +29,14 @@
       "Bash(where soffice *)",
       "Bash(where libreoffice *)",
       "Bash(git checkout *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh pr create --base main --head feature/self-inspection-db --title '正規化DB\\(自主点検DB.xlsx\\)構築・input/output index整備' --body ' *)",
+      "PowerShell($g = Get-Command gh -ErrorAction SilentlyContinue; if \\($g\\) { $g.Source } else { \"NOT FOUND\" })",
+      "PowerShell($vars = 'GH_TOKEN','GITHUB_TOKEN','GH_ENTERPRISE_TOKEN'; foreach \\($v in $vars\\) { $val = [Environment]::GetEnvironmentVariable\\($v\\); if \\($val\\) { \"$v = SET \\(len $\\($val.Length\\)\\)\" } else { \"$v = \\(empty\\)\" } })",
+      "Bash(git credential *)",
+      "Bash(python tmp/_create_pr.py)"
     ]
   }
 }
