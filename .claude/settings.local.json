@@ -17,7 +17,19 @@
       "Bash(python -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
       "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
       "Bash(PYTHONIOENCODING=utf-8 python _build_xlsx.py)",
-      "Bash(cd \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\" && rm -f _tmp_*.txt && echo \"cleaned tmp files\" && ls -la \"data/自主点検_提出成果物一覧.xlsx\")"
+      "Bash(cd \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\" && rm -f _tmp_*.txt && echo \"cleaned tmp files\" && ls -la \"data/自主点検_提出成果物一覧.xlsx\")",
+      "Bash(C:/Users/ninni/scoop/apps/python/current/python.exe -c ' *)",
+      "Bash(where python *)",
+      "Bash(where python.exe)",
+      "Bash(python -c \"import openpyxl; print\\('ok'\\)\")",
+      "Bash(Rename-Item -LiteralPath '監査QA表まとめ1 2.xlsx' -NewName '20260610時点監査対応QA表.xlsx')",
+      "Bash(Get-ChildItem -Name '*監査対応QA*','*監査QA*')",
+      "Bash(python tmp/build_db.py)",
+      "Bash(python tmp/build_cp.py)",
+      "Bash(where soffice *)",
+      "Bash(where libreoffice *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)"
     ]
   }
 }
