@@ -17,7 +17,26 @@
       "Bash(python -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
       "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
       "Bash(PYTHONIOENCODING=utf-8 python _build_xlsx.py)",
-      "Bash(cd \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\" && rm -f _tmp_*.txt && echo \"cleaned tmp files\" && ls -la \"data/自主点検_提出成果物一覧.xlsx\")"
+      "Bash(cd \"C:\\\\Users\\\\dainin-kou\\\\Documents\\\\Claude\\\\Projects\\\\自主点検実施基準\" && rm -f _tmp_*.txt && echo \"cleaned tmp files\" && ls -la \"data/自主点検_提出成果物一覧.xlsx\")",
+      "Bash(C:/Users/ninni/scoop/apps/python/current/python.exe -c ' *)",
+      "Bash(where python *)",
+      "Bash(where python.exe)",
+      "Bash(python -c \"import openpyxl; print\\('ok'\\)\")",
+      "Bash(Rename-Item -LiteralPath '監査QA表まとめ1 2.xlsx' -NewName '20260610時点監査対応QA表.xlsx')",
+      "Bash(Get-ChildItem -Name '*監査対応QA*','*監査QA*')",
+      "Bash(python tmp/build_db.py)",
+      "Bash(python tmp/build_cp.py)",
+      "Bash(where soffice *)",
+      "Bash(where libreoffice *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh pr create --base main --head feature/self-inspection-db --title '正規化DB\\(自主点検DB.xlsx\\)構築・input/output index整備' --body ' *)",
+      "PowerShell($g = Get-Command gh -ErrorAction SilentlyContinue; if \\($g\\) { $g.Source } else { \"NOT FOUND\" })",
+      "PowerShell($vars = 'GH_TOKEN','GITHUB_TOKEN','GH_ENTERPRISE_TOKEN'; foreach \\($v in $vars\\) { $val = [Environment]::GetEnvironmentVariable\\($v\\); if \\($val\\) { \"$v = SET \\(len $\\($val.Length\\)\\)\" } else { \"$v = \\(empty\\)\" } })",
+      "Bash(git credential *)",
+      "Bash(python tmp/_create_pr.py)"
     ]
   }
 }
